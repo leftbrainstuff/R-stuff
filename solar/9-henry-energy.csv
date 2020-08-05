@@ -1,0 +1,34 @@
+date,use,fgkwh,create,tokwh,generate,solarkwh,time,usecase,comment
+14Apr2020,03,5605.7,93,7234.0,e-total,10302, , ,
+15Apr2020,03,5608.8,93,7238.9,e-total,10309, , ,
+16Apr2020,03,5613.6,93,7267.8,e-total,10340, , ,
+18Apr2020,03,5627.3,93,7283.3,e-total,10364, , ,
+20Apr2020,03,5650.8,93,7305.8,e-total,10392, , ,
+21Apr2020,03,5669.1,93,7332.3,e-total,10423, , ,
+22Apr2020,03,5671.5,93,7360.5,e-total,10454, , ,
+29Apr2020,03,5742.3,93,7425.1,e-total,10531, , ,
+09May2020,03,5872.3,93,7545.1,e-total,10708, , ,
+22May2020,03,6110.8,93,7699.6,e-total,10925, , ,
+24May2020,03,6159.6,93,7715.4,e-total,10947, , ,
+30May2020,03,6240.3,93,7772.0,e-total,11028, , ,
+31May2020,03,6261.9,93,7772.8,e-total,11035, , ,
+4Jun2020,03,6335.8,93,7793.8,e-total,11070,0812,spa,spa on 14 degC
+4Jun2020,03,6358.7,93,7794.1,e-total,11075,1741,spa,spa off 29.10 degC
+5Jun2020,03,6450.9,93,7794.2,e-total,11090,0715,spa,spa on 17.70 degC and solar in waiting mode
+6Jun2020,03,6422.0,93,7794.3,e-total,11111,0814,spa,spa on 22.90 degC
+6Jun2020,03,6433.0,93,7794.4,e-total,11116,1153,spa,spa got to 36degC before 10am
+7Jun2020,03,6470.7,93,7795.7,e-total,11124,1117, ,Spa was used yesterday
+10Jun2020,03,6556.2,93,7818.1,e-total,11185,1615, ,
+13Jun2020,03,6630.5,93,7832.5,e-total,11224,1100, ,overcast and wet
+13Jun2020,03,6636.0,93,7832.5,e-total,11225,1719, ,just 1.6kWh generated today
+22Jun2020,03,6882.5,93,7861.9,e-total,11304,0810, ,mostly overcast and wet
+26Jun2020,03,6985.7,93,7884.4,e-total,11352,0838,spa,spa on for la rondes visit. 12.10 degC at 0841
+29Jun2020,03,7109.6,93,7899.3,e-total,11408,0929,spa,spa for la rondes on sat night
+5Jul2020,03,7272.4,93,7948.2,e-total,11514,1704, ,
+8Jul2020,03,7358.7,93,7972.3,e-total,11546,1704, ,
+14Jul2020,03,7512.9,93,8020.6,e-total,11632,1240, , 
+19Jul2020,03,7654.6,93,8069.6,e-total,11722,1726, ,
+25Jul2020,03,7806.2,93,8121.8,e-total,11815,1217, ,
+31Jul2020,03,7972.0,93,8166.4,e-total,11902,0847,spa,spa on 12.90 degC at 0944
+1Aug2020,03,8035.8,93,8172.7,e-total,11933,1201,spa,spa still on overnight  38.90 degC
+2Aug2020,03,8073.8,93,8187.1,e-total,11964,1434,spa,spa still on and used for one hour. Spa off 20.55
