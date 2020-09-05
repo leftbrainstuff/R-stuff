@@ -5,7 +5,7 @@ library(ggplot2)
 library(lubridate) # handling date and time formats
 
 ## retrieve raw data
-timesheet <- read.csv("<path to csv>")
+timesheet <- read.csv("timesheet.csv")
 timesheet <- data.frame(timesheet, fix.empty.names = TRUE,
            stringsAsFactors = TRUE)
 str(timesheet)
