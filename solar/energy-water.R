@@ -7,7 +7,7 @@ library(lubridate)
 library(dplyr)
 
 # Import raw data
-energy <- read.csv(file="9-henry-energy.csv")
+energy <- read.csv(file="energy-water.csv")
 head(energy)
 energy
 
@@ -58,7 +58,7 @@ geom_smooth(aes(x = date, y = solarusage, color = "solargeneration")) +
 theme(text=element_text(family="Tahoma"))
  
 # Plot
-plot + labs(title = "Residential Energy Use", subtitle = "Solar Generation and Grid Energy Use", x = "Date", y = "kWh", caption = "Data: 9 Henry")
+plot + labs(title = "Residential Energy Use", subtitle = "Solar Generation and Grid Energy Use", x = "Date", y = "kWh", caption = "Data: energy")
 
 # Format Energy Statistics Plot
 plot2 <- ggplot(data = energy, aes(x = date)) + 
@@ -73,6 +73,6 @@ plot2 <- ggplot(data = energy, aes(x = date)) +
   theme(text=element_text(family="Tahoma"))
 
 # Plot
-plot2 + labs(title = "Residentual Energy Use", subtitle = "Solar Generation and Grid Energy Use", x = "Date", y = "kWh", caption = "Data: 9 Henry")
+plot2 + labs(title = "Residentual Energy Use", subtitle = "Solar Generation and Grid Energy Use", x = "Date", y = "kWh", caption = "Data: energy")
 
 
