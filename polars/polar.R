@@ -12,8 +12,8 @@ library(scales)
 ## Create plot ready data frames
 
 ## Source data
-polars <- read.csv("/Users/ifal/WorkDocs/RScratch/polars.csv") # grab the polar data with columns TWA, TWS, VMG not SOG and sailplan(jib, main, staysail, spinaker) as % in seperate columns, Date (date) and Vessel Configuration (text) by date
-Polars <- data.frame(polars, fix.empty.names = TRUE, stringsAsFactors = TRUE) # build the polars df
+polars <- read.csv("polars.csv") # grab the polar data with columns TWA, TWS, VMG not SOG and sailplan(jib, main, staysail, spinaker) as % in seperate columns, Date (date) and Vessel Configuration (text) by date
+polars <- data.frame(polars, fix.empty.names = TRUE, stringsAsFactors = TRUE) # build the polars df
 str(polars) # check it was read and the df has data
 
 ## The plot
