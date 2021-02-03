@@ -1,0 +1,7 @@
+id,code,name,area,area_land,area_water,population,population_growth,birth_rate,death_rate,migration_rate
+9,as,Australia,7741220,7682300,58920,22751014,1.07,12.15,7.14,5.65
+59,fj,Fiji,18274,18274,0,909389,0.67,19.43,6.04,6.75
+78,id,Indonesia,1904569,1811569,93000,255993674,0.92,16.72,6.37,1.16
+89,kr,Kiribati,811,811,0,105711,1.15,21.46,7.12,2.87
+111,rm,Marshall Islands,181,181,0,72191,1.66,25.6,4.21,4.83
+126,nz,New Zealand,267710,267710,,4438393,0.82,13.33,7.36,2.21
