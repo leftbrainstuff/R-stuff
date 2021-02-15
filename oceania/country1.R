@@ -22,7 +22,8 @@ library(scales)
 ## Create plot ready data frames
 
 ## Source data
-countrydata <- read.csv(file.choose()) # grab the polar data with columns TWA, TWS, VMG not SOG and sailplan(jib, main, staysail, spinaker) as % in seperate columns, Date (date) and Vessel Configuration (text) by date
+countrydata <- read.csv("/Users/ifal/Documents/gitlocalrepo/R-stuff/oceania/factbook-oceania2.csv")
+# countrydata <- read.csv(file.choose()) # grab the polar data with columns TWA, TWS, VMG not SOG and sailplan(jib, main, staysail, spinaker) as % in seperate columns, Date (date) and Vessel Configuration (text) by date
 countrydata <- data.frame(countrydata, fix.empty.names = TRUE, stringsAsFactors = TRUE) # build the countrydata df
 str(countrydata) # check it was read and the df has data
 
@@ -30,7 +31,7 @@ str(countrydata) # check it was read and the df has data
 # p <- ggplot(countrydata, aes(x=year, y=education, color=year)) +
 p <- ggplot(countrydata, aes(x=population_growth, y=birth_rate)) +
   geom_point() +
-  geom_point(aes(size=death_rate)) +
+  geom_point(aes(size=migration_rate)) +
   coord_cartesian() +
   scale_x_continuous(limits=c(0,max(countrydata$population_growth))) +
   scale_y_continuous(limits=c(0,max(countrydata$birth_rate))) +
@@ -39,4 +40,4 @@ p <- ggplot(countrydata, aes(x=population_growth, y=birth_rate)) +
 p
 
 ## Save plot as image
-ggsave("oceania-countrydata.png", device = NULL, dpi = 300)
+# ggsave("oceania-countrydata.png", device = NULL, dpi = 300)

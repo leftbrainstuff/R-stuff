@@ -1,0 +1,16 @@
+﻿country,dataset_qty_keyword,dataset_qty_country,jnap_status,population,gov_exp_per_student,literacy_rate,mobile_access,patent_applications_non_residents,tech_coop_grants
+American Samoa,1081,335,unknown,55310,4.1,97,4,,
+Fiji,3490,772,stalled,909389,5.7,99,118,17,46390
+Indonesia,907,,unknown,255993674,10.5,96,127,8347,361850
+Kiribati,,,in work,105711,12,97.7,46,2,21270
+Marshall Islands,1807,410,under review,72191,27.8,98,28,,3460
+Micronesia,2006,16,unknown,113815,12.41,98.8,21,,5210
+Nauru,,,under review,12580,4.25,96.5,95,,7810
+Palau,1853,296,alternative,18010,7.53,97,134,,2680
+PNG,2254,657,unknown,8776110,1.93,62,48,46,306960
+Samoa,3099,380,unknown,197100,13,99,64,3,28080
+Solomon Islands,,,alternative,669820,9.86,77,71,2,39930
+Tonga,2470,592,released,104490,7.5,99,59,1,17270
+Tuvalu,2018,570,unknown,11650,3.73,99,70,,6380
+Vanuatu,2356,662,alternative,299880,21,88,88,,30280
+Vietnam,244,,unknown,96462110,4.17,95,141,5425,266160
