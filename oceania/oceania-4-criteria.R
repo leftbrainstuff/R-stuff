@@ -25,7 +25,7 @@ library(scales)
 ## Create plot ready data frames
 
 ## Source data
-countrydata <- read.csv("/Users/ifal/Documents/gitlocalrepo/R-stuff/oceania/factbook-oceania3.csv")
+countrydata <- read.csv(file.choose())
 # countrydata <- read.csv(file.choose())
 countrydata <- data.frame(countrydata, fix.empty.names = TRUE, stringsAsFactors = TRUE) # build the countrydata df
 str(countrydata) # check it was read and the df has data
@@ -38,12 +38,12 @@ p <- ggplot() +
   #geom_point(aes(mobile_access, gov_exp_per_student, size=literacy_rate, color=jnap_status), countrydata, alpha=0.5) + # for size=literacy-rate
   #geom_point(aes(mobile_access, gov_exp_per_student, size=dataset_qty_keyword, color=jnap_status), countrydata, alpha=0.5) + # for dataset_qty_keyword
   geom_point(aes(mobile_access, gov_exp_per_student, size=cost_of_starting_business, color=jnap_status), countrydata, alpha=0.5) + # for cost_of_starting_business
-  guides(color=guide_legend(override.aes = list(size=3))) +
+  guides(color=guide_legend(override.aes = list(size=5))) +
   geom_text(aes(x=countrydata$mobile_access, y=countrydata$gov_exp_per_student, label=countrydata$country), colour="black", size=3) +
   #scale_size(range=c(8,20),breaks=c(10000,100000,1000000,10000000),labels=c(">=10k",">=100k",">=1M",">=10M"),guide="legend", name="Population") + # for size=population
   #scale_size(range=c(5,20),breaks=c(50,75,90,95),labels=c(">=50",">=75",">=90",">=95"),guide="legend") + # for size=literacy-rate
   #scale_size(range=c(3,20),breaks=c(100,1000,2000,3000,4000),labels=c(">=100",">=1k",">=2k",">=3k",">=4k"),guide="legend", name="Open Data Sets") + # for dataset_qty_keyword
-  scale_size(range=c(3,20),breaks=c(10,20,50,75,90),labels=c(">=10",">=20",">=50",">=75",">=90"),guide="legend", name="Bus Start Costs (% GDP)") + # cost_of_starting_business
+  scale_size(range=c(3,20),breaks=c(10,20,50,75,90),labels=c(">=10",">=20",">=50",">=75",">=90"),guide="legend", name="Bus Start Cost (%Income/GNI)") + # cost_of_starting_business
   #scale_fill_viridis(scale_color_viridis_d(option = "magma", guide = guide_legend(override.aes = list(size = 3)))) +
   #theme_bw() +
   coord_cartesian() +
@@ -53,7 +53,7 @@ p <- ggplot() +
   #labs(x="Cellular Penetration (%)", y="Gov Exp / Student (%GDP)", caption = "(based on data from the World Bank, www.theglobaleconomy.com and Gov websites)", color="JNAP", size="Population") + # for size=population
   #labs(x="Cellular Penetration (%)", y="Gov Exp / Student (%GDP)", caption = "(based on data from the World Bank, www.theglobaleconomy.com and Gov websites)", color="JNAP", size="Literacy") + # for size=literacy-rate
   #labs(x="Cellular Penetration (%)", y="Gov Exp / Student (%GDP)", caption = "(based on data from the World Bank, www.theglobaleconomy.com and Gov websites)", color="JNAP", size="Open Data Sets") + # for dataset_qty_keyword
-  labs(x="Cellular Penetration (%)", y="Gov Exp / Student (%GDP)", caption = "(based on data from the World Bank, www.theglobaleconomy.com and Gov websites)", color="JNAP", size="Bus Start Cost (% GNI)") + # for cost_of_starting_business
+  labs(x="Cellular Penetration (%)", y="Gov Education Exp (%GDP)", caption = "(based on data from the World Bank, www.theglobaleconomy.com and Gov websites)", color="JNAP", size="Bus Start Cost (%Income/GNI)") + # for cost_of_starting_business
   ggtitle("Oceania Investment, Preparedness, Connectivity of Citizens", subtitle = "JNAP = Joint National Action Plan for Emergency Preparedness")
 p
 
