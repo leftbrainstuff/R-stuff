@@ -18,6 +18,8 @@ library(ggplot2)
 library(lubridate)
 library(dplyr)
 library(scales)
+library(plyr)
+library(readr)
 
 ## Create plot ready data frames
 
@@ -27,20 +29,24 @@ library(scales)
 # str(logfile) # check it was read and the df has data
 
 ## Read in multiple csv files to a single data table
-logfile <-
-    list.files(pattern = "*.csv") %>% 
-    map_df(~read_csv(.))
-str(logfile)
+setwd("/home/leftbrainstuff/gitlocalrepo/R-stuff/deepracer/")
+filedir = "logfiles/ifal-kuei-clone-5a"
+logfiles = list.files(path=filedir, pattern="*.csv", full.names=TRUE)
+str(logfiles)
+head(logfiles)
 
+# Read in multiple files in a single directory
+cumlogfile = ldply(logfiles, read.csv, stringsAsFactors = FALSE)
+str(cumlogfile)
+head(cumlogfile)
 
 ## The plot
-p <- ggplot(logfile, aes(x=episode, y=reward)) +
-  geom_point() +
+p <- ggplot(cumlogfile, aes(x=episode, y=reward)) +
   geom_point(aes(size=throttle, color=progress)) +
   coord_cartesian() +
   #scale_x_continuous(limits=c(0,max(countrydata$population_growth))) +
   #scale_y_continuous(limits=c(0,max(countrydata$birth_rate))) +
-  facet_wrap(~ action) +
+  #facet_wrap(~ action) +
   ggtitle("DeepRacer Log Data", subtitle = "ifal-kuei-clone-1")
 p
 
