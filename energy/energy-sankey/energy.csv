@@ -1,0 +1,3 @@
+date,source,target,value,units
+1Jul2021,solar,battery1,12,kWhr
+2Jul2021,battery1,house,10,kWhr

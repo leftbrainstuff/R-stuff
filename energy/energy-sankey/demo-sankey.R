@@ -6,7 +6,7 @@ fig <- plot_ly(
   
   node = list(
     label = c("Solar", "Generator", "48V", "12V", "House", "Workshop"),
-    color = c("blue", "blue", "blue", "blue", "blue", "blue"),
+    color = c("orange", "red", "gray", "green", "pink", "blue"),
     pad = 15,
     thickness = 20,
     line = list(
@@ -29,3 +29,5 @@ fig <- fig %>% layout(
 )
 
 fig
+
+str(source)

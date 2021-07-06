@@ -30,7 +30,7 @@ library(readr)
 
 ## Read in multiple csv files to a single data table
 setwd("/home/leftbrainstuff/gitlocalrepo/R-stuff/deepracer/")
-filedir = "logfiles/ifal-kuei-clone-5a"
+filedir = "logfiles/ifal-kuei-clone-7"
 logfiles = list.files(path=filedir, pattern="*.csv", full.names=TRUE)
 str(logfiles)
 head(logfiles)
