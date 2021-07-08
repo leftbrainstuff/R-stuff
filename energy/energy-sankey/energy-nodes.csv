@@ -3,8 +3,7 @@
 2,wind_energy,Wind Energy,left,,solar,solar-1.5,right
 3,generator,Generator,left,,solar,mppt-1,right
 4,mppt,mppt,below,left,3,0,right
-5,re_export,Re-export,above,left,mppt,solar,right
-6,housebattery,house\nbattery,below,right,mppt+3,mppt-2,right
+6,housebattery,48V House\nBattery,below,right,mppt+3,mppt-2,right
 7,energy,Energetic use,above,left,mppt+5,mppt-0.7,right
 8,pool,Pool Heatng,right,,housebattery+2,housebattery-1.5,stock
 9,short,Elec Test Bench,above,left,pool,housebattery+0.2,right
@@ -12,6 +11,9 @@
 11,eol,Waste,below,,pool+2,housebattery,right
 12,.R1,,right,,eol+1.5,pool,down
 13,waste,Losses,right,,eol+2,energy,right
-14,export,Export,right,,waste,re_export,right
+14,export,Export,right,,waste,mppt+2,right
 15,R2,Recycling,below,left,housebattery,pool-2,left
 16,.R3,,none,,mppt-1.5,housebattery,up
+17,crafteralternator,Crafter\nAlternator,left,,solar,mppt-3,right
+18,anderson,Anderson\nPlug,above,,solar+1,mppt-3,right
+19,dctodc,DC to DC,above,,solar+4,mppt-3,right

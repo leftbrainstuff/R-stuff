@@ -1,20 +1,8 @@
 ,from,to,substance,quantity
-1,solar,re_export,12V,21.90936
-2,,,Fossil,99.92917
-3,,,Metals,8.99973
-4,,,Mineral,5.68612
-5,re_export,export,12V,25.83098
-6,,,Fossil,100.35633
-7,,,Metals,11.81459
-8,,,Mineral,7.05547
 9,wind_energy,mppt,12V,11.06754
 10,,,Fossil,1.34425
 11,,,Metals,3.69492
 12,,,Mineral,2.85429
-13,wind_energy,re_export,12V,3.92162
-14,,,Fossil,0.42716
-15,,,Metals,2.81486
-16,,,Mineral,1.36935
 17,solar,mppt,12V,48.85944
 18,,,Fossil,158.30747
 19,,,Metals,26.71819
@@ -87,3 +75,6 @@
 86,,,Fossil,1.12419
 87,,,Metals,3.21052
 88,,,Mineral,31.80568
+89,crafteralternator,anderson,12V,50
+90,anderson,dctodc,12V,50
+91,dctodc,housebattery,12V,50
